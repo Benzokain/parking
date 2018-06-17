@@ -285,7 +285,6 @@ namespace WindowsFormsApplication6
                 command.Parameters.Add("startDate", OleDbType.DBDate).Value = this.datePicker.Value;
                 //command.Parameters.Add("startDate", OleDbType.DBDate).Value = this.datePicker.Value;
                 //command.Parameters.Add("startDate", OleDbType.DBDate).Value = this.datePicker.Value;
-                //command.Parameters.Add("startDate", OleDbType.DBDate).Value = this.datePicker.Value;
                 //command.Parameters.Add("endDate", OleDbType.DBDate).Value = this.datePicker.Value.AddDays(1);
 
                 try {
