@@ -1,0 +1,10 @@
+C:\Users\Garik\Documents\Visual Studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+C:\Users\Garik\Documents\Visual Studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+C:\Users\Garik\Documents\Visual Studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+C:\Users\Garik\Documents\Visual Studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\ParkingReport.exe.config
+C:\Users\Garik\Documents\Visual Studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\ParkingReport.exe
+C:\Users\Garik\Documents\Visual Studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\ParkingReport.pdb
+C:\Users\Garik\Documents\Visual Studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\ParkingReport.exe.CodeAnalysisLog.xml
+C:\Users\Garik\Documents\Visual Studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\ParkingReport.exe.lastcodeanalysissucceeded
+C:\Users\Garik\Documents\Visual Studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\ParkingReport.exe
+C:\Users\Garik\Documents\Visual Studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\ParkingReport.pdb
