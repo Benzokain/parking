@@ -18,7 +18,7 @@ namespace WindowsFormsApplication6
     public partial class Form1 : Form
     {
 
-        private bool isProd = true;
+        private bool isProd = false;
 
         public Form1()
         {
@@ -172,7 +172,7 @@ namespace WindowsFormsApplication6
         private void prodGetEnterTime()
         {
 
-            string onlyEnterTimequeryString = @"SELECT secondName.Arguments AS secondName, firstName.Arguments AS firstName, numberComeIn.Arguments AS number, Data AS EnterTime
+            string onlyEnterTimeQueryString = @"SELECT secondName.Arguments AS secondName, firstName.Arguments AS firstName, numberComeIn.Arguments AS number, Data AS EnterTime
 		        FROM ReportMessageMain
 		        LEFT JOIN (SELECT ID, ReportMessageArguments.Arguments FROM ReportMessageArguments WHERE Keys = 10) AS secondName ON secondName.ID = ReportMessageMain.ID
 		        LEFT JOIN (SELECT ID, ReportMessageArguments.Arguments FROM ReportMessageArguments WHERE Keys = 16) AS firstName ON firstName.ID = ReportMessageMain.ID
@@ -212,7 +212,7 @@ namespace WindowsFormsApplication6
 
             using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.Parking20ConnectionString)) {
 
-                SqlCommand command = new SqlCommand(onlyEnterTimequeryString, connection);
+                SqlCommand command = new SqlCommand(onlyEnterTimeQueryString, connection);
 
                 command.Parameters.Add("@startDate", SqlDbType.Date).Value = this.datePicker.Value;
 
@@ -238,7 +238,7 @@ namespace WindowsFormsApplication6
 
         private void devGetEnterTime()
         {
-            string onlyEnterTimequeryString = @"SELECT secondName.Arguments AS secondName, firstName.Arguments AS firstName, numberComeIn.Arguments AS number, Data AS EnterTime
+            string onlyEnterTimeQueryString = @"SELECT secondName.Arguments AS secondName, firstName.Arguments AS firstName, numberComeIn.Arguments AS number, Data AS EnterTime
 		        FROM ReportMessageMain
 		        LEFT JOIN (SELECT ID, ReportMessageArguments.Arguments FROM ReportMessageArguments WHERE Keys = 10) AS secondName ON secondName.ID = ReportMessageMain.ID
 		        LEFT JOIN (SELECT ID, ReportMessageArguments.Arguments FROM ReportMessageArguments WHERE Keys = 16) AS firstName ON firstName.ID = ReportMessageMain.ID
@@ -279,10 +279,11 @@ namespace WindowsFormsApplication6
 
             using (OleDbConnection connection = new OleDbConnection(Properties.Settings.Default.ConnectionString1)) {
 
-                OleDbCommand command = new OleDbCommand(onlyEnterTimequeryString, connection);
+                OleDbCommand command = new OleDbCommand(onlyEnterTimeQueryString, connection);
 
                 command.Parameters.Add("startDate", OleDbType.DBDate).Value = this.datePicker.Value;
                 command.Parameters.Add("startDate", OleDbType.DBDate).Value = this.datePicker.Value;
+                //command.Parameters.Add("startDate", OleDbType.DBDate).Value = this.datePicker.Value;
                 //command.Parameters.Add("startDate", OleDbType.DBDate).Value = this.datePicker.Value;
                 //command.Parameters.Add("startDate", OleDbType.DBDate).Value = this.datePicker.Value;
                 //command.Parameters.Add("endDate", OleDbType.DBDate).Value = this.datePicker.Value.AddDays(1);
